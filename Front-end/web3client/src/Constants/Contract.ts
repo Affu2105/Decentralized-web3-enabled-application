@@ -1,0 +1,2 @@
+export const COMPLAINTBOX="your address";
+// above are my published contract adress so deploy your own contract on thrdweb and put there id here or contact me to use this i will provide you the client id of my project  for your demo 

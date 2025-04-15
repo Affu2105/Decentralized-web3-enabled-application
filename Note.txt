@@ -1,0 +1,51 @@
+This is our main Project Diretory
+
+Project Setup Guide
+
+Follow these steps to get both the frontend and backend running properly.
+Backend Setup (Backend/webthree)
+
+Navigate to the backend directory:
+
+cd Backend/webthree
+
+Install dependencies:
+
+npm install
+
+Deploy and publish the smart contract using Thirdweb:
+
+    npx thirdweb deploy
+    npx thirdweb publish
+
+    After deployment, copy the generated contract address — you'll need it for the frontend setup.
+
+🌐 Frontend Setup (front-end/webclient)
+
+    Navigate to the frontend directory:
+
+cd front-end/webclient
+
+Install frontend dependencies:
+
+npm install
+
+Create a .env.local file in the root of webclient and add your Thirdweb Client ID:
+
+VITE_TEMPLATE_CLIENT_ID=client-id-here
+
+Open the file:
+
+src/Constants/contract.ts
+
+and paste your deployed contract address like this:
+
+export const CONTRACT_NAME = "your-deployed-contract-address";
+
+Start the development server:
+
+npm run dev
+
+Your app should now be running at:
+
+http://localhost:5173
